@@ -1,5 +1,30 @@
 #display {
     border-style: solid;
     border-width: 1px;
-    height: 20px;
+    height: 100px;
+    font-size: 80px;
+}
+
+body {
+    background-color: greenyellow;
+}
+
+#calculator {
+    width: 500px;
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+button {
+    width: 122px;
+    height: 100px;
+    font-size: 35px;
+}
+
+.operator {
+    background-color: orange;
+}
+#equal, #clear {
+    background-color: yellow;
 }

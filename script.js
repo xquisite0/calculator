@@ -17,6 +17,9 @@ function operate(int1, int2, operator) {
         return multiply(int1, int2);
     }
     if (operator === 'divide') {
+        if (int2 == 0) {
+            return 'No division by 0';
+        }
         return divide(int1, int2);
     } 
 }
@@ -49,10 +52,11 @@ operators.forEach(operator => {
 
 let equal = document.querySelector('#equal');
 equal.addEventListener('click', evt => {
-    let answer = operate(operand1, display.textContent, currentOperator);
-    console.log(answer);
-    display.textContent = answer;
-    operations = 0;
+    if (operations !== 0) {
+        let answer = operate(operand1, display.textContent, currentOperator);
+        display.textContent = Math.round(answer * 10 ** 10) / 10 ** 10;
+        operations = 0;
+    }
 })
 
 let clear = document.querySelector('#clear');
