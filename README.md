@@ -1,1 +1,2 @@
 # calculator
+This project utilizes fundamental javascript, html and css to create a simple calculator website. Skills demonstrated include the ability to create basic functions, utilize event listeners and basic HTML and CSS skills. This calculator performs basic arithmetic (+, -, x, /) on numbers.
